@@ -11,19 +11,14 @@ def main():
         index = [item.find("Q1"), item.find("Q2"), item.find("Q3"), item.find("Q4"), item.find("Q")]
         if index[0] != -1:
             list_q1.append(key)
-            continue
         elif index[1] != -1:
             list_q2.append(key)
-            continue
         elif index[2] != -1:
             list_q3.append(key)
-            continue
         elif index[3] != -1:
             list_q4.append(key)
-            continue
         elif index[4] == -1:
             list_q_none.append(key)
-            continue
     list_q1 = list(set(list_q1))
     list_q2 = list(set(list_q2))
     list_q3 = list(set(list_q3))
